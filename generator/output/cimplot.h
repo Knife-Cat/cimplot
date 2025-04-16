@@ -4,7 +4,7 @@
 #ifndef CIMGUIPLOT_INCLUDED
 #define CIMGUIPLOT_INCLUDED
 
-#include "../cimgui/cimgui.h"
+#include "cimgui.h"
 
 #ifdef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 #include <time.h>

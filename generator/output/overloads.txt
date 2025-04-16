@@ -14,13 +14,6 @@ ImPlotPlot_XAxis	2
 ImPlotPlot_YAxis	2
 1	ImPlotAxis*	ImPlotPlot_YAxis_Nil (int)
 2	const ImPlotAxis*	ImPlotPlot_YAxis__const (int)const
-ImPlotPoint_ImPlotPoint	3
-1	nil	ImPlotPoint_ImPlotPoint_Nil ()
-2	nil	ImPlotPoint_ImPlotPoint_double (double,double)
-3	nil	ImPlotPoint_ImPlotPoint_Vec2 (const ImVec2)
-ImPlotRange_ImPlotRange	2
-1	nil	ImPlotRange_ImPlotRange_Nil ()
-2	nil	ImPlotRange_ImPlotRange_double (double,double)
 ImPlotRect_Clamp	2
 1	ImPlotPoint	ImPlotRect_Clamp_PlotPoInt (const ImPlotPoint)
 2	ImPlotPoint	ImPlotRect_Clamp_double (double,double)
@@ -460,4 +453,4 @@ ImPlot_TagX	2
 ImPlot_TagY	2
 1	void	ImPlot_TagY_Bool (double,const ImVec4,bool)
 2	void	ImPlot_TagY_Str (double,const ImVec4,const char*,...)
-405 overloaded
+400 overloaded

@@ -1301,9 +1301,7 @@
     "ImPlotNextPlotData": "implot_internal:1153",
     "ImPlotPieChartFlags_": "implot:289",
     "ImPlotPlot": "implot_internal:1013",
-    "ImPlotPoint": "implot:470",
     "ImPlotPointError": "implot_internal:421",
-    "ImPlotRange": "implot:485",
     "ImPlotRect": "implot:495",
     "ImPlotScale_": "implot:404",
     "ImPlotScatterFlags_": "implot:240",
@@ -1337,9 +1335,7 @@
     "ImPlotNextItemData": true,
     "ImPlotNextPlotData": true,
     "ImPlotPlot": true,
-    "ImPlotPoint": true,
     "ImPlotPointError": true,
-    "ImPlotRange": true,
     "ImPlotRect": true,
     "ImPlotStyle": true,
     "ImPlotSubplot": true,
@@ -2188,16 +2184,6 @@
         "type": "bool"
       }
     ],
-    "ImPlotPoint": [
-      {
-        "name": "x",
-        "type": "double"
-      },
-      {
-        "name": "y",
-        "type": "double"
-      }
-    ],
     "ImPlotPointError": [
       {
         "name": "X",
@@ -2213,16 +2199,6 @@
       },
       {
         "name": "Pos",
-        "type": "double"
-      }
-    ],
-    "ImPlotRange": [
-      {
-        "name": "Min",
-        "type": "double"
-      },
-      {
-        "name": "Max",
         "type": "double"
       }
     ],
