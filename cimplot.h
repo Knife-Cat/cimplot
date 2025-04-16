@@ -4,7 +4,7 @@
 #ifndef CIMGUIPLOT_INCLUDED
 #define CIMGUIPLOT_INCLUDED
 
-#include "../cimgui/cimgui.h"
+#include "cimgui.h"
 
 #ifdef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 #include <time.h>
@@ -342,6 +342,16 @@ typedef enum {
     ImPlotBin_Rice    = -3,
     ImPlotBin_Scott   = -4,
 }ImPlotBin_;
+typedef struct ImPlotPoint ImPlotPoint;
+struct ImPlotPoint
+{
+    double x, y;
+};
+typedef struct ImPlotRange ImPlotRange;
+struct ImPlotRange
+{
+    double Min, Max;
+};
 typedef struct ImPlotRect ImPlotRect;
 struct ImPlotRect
 {
@@ -800,6 +810,16 @@ typedef ImVector<double> ImVector_double;
 typedef ImVector<float> ImVector_float;
 typedef ImVector<int> ImVector_int;
 #endif //CIMGUI_DEFINE_ENUMS_AND_STRUCTS
+CIMGUI_API ImPlotPoint* ImPlotPoint_ImPlotPoint_Nil(void);
+CIMGUI_API void ImPlotPoint_destroy(ImPlotPoint* self);
+CIMGUI_API ImPlotPoint* ImPlotPoint_ImPlotPoint_double(double _x,double _y);
+CIMGUI_API ImPlotPoint* ImPlotPoint_ImPlotPoint_Vec2(const ImVec2 p);
+CIMGUI_API ImPlotRange* ImPlotRange_ImPlotRange_Nil(void);
+CIMGUI_API void ImPlotRange_destroy(ImPlotRange* self);
+CIMGUI_API ImPlotRange* ImPlotRange_ImPlotRange_double(double _min,double _max);
+CIMGUI_API bool ImPlotRange_Contains(ImPlotRange* self,double value);
+CIMGUI_API double ImPlotRange_Size(ImPlotRange* self);
+CIMGUI_API double ImPlotRange_Clamp(ImPlotRange* self,double value);
 CIMGUI_API ImPlotRect* ImPlotRect_ImPlotRect_Nil(void);
 CIMGUI_API void ImPlotRect_destroy(ImPlotRect* self);
 CIMGUI_API ImPlotRect* ImPlotRect_ImPlotRect_double(double x_min,double x_max,double y_min,double y_max);

@@ -25,6 +25,46 @@ ImPlotPoint Wrapper2(int idx, void* data)
 	return pp;
 }
 
+CIMGUI_API ImPlotPoint* ImPlotPoint_ImPlotPoint_Nil(void)
+{
+    return IM_NEW(ImPlotPoint)();
+}
+CIMGUI_API void ImPlotPoint_destroy(ImPlotPoint* self)
+{
+    IM_DELETE(self);
+}
+CIMGUI_API ImPlotPoint* ImPlotPoint_ImPlotPoint_double(double _x,double _y)
+{
+    return IM_NEW(ImPlotPoint)(_x,_y);
+}
+CIMGUI_API ImPlotPoint* ImPlotPoint_ImPlotPoint_Vec2(const ImVec2 p)
+{
+    return IM_NEW(ImPlotPoint)(p);
+}
+CIMGUI_API ImPlotRange* ImPlotRange_ImPlotRange_Nil(void)
+{
+    return IM_NEW(ImPlotRange)();
+}
+CIMGUI_API void ImPlotRange_destroy(ImPlotRange* self)
+{
+    IM_DELETE(self);
+}
+CIMGUI_API ImPlotRange* ImPlotRange_ImPlotRange_double(double _min,double _max)
+{
+    return IM_NEW(ImPlotRange)(_min,_max);
+}
+CIMGUI_API bool ImPlotRange_Contains(ImPlotRange* self,double value)
+{
+    return self->Contains(value);
+}
+CIMGUI_API double ImPlotRange_Size(ImPlotRange* self)
+{
+    return self->Size();
+}
+CIMGUI_API double ImPlotRange_Clamp(ImPlotRange* self,double value)
+{
+    return self->Clamp(value);
+}
 CIMGUI_API ImPlotRect* ImPlotRect_ImPlotRect_Nil(void)
 {
     return IM_NEW(ImPlotRect)();

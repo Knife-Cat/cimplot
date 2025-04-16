@@ -312,7 +312,6 @@ enum ImPlotBin_ {
     ImPlotBin_Rice    = -3, 
     ImPlotBin_Scott   = -4, 
 };
-__pragma(runtime_checks("",off)) __pragma(check_stack(off)) __pragma(strict_gs_check(push,off))
 struct ImPlotPoint {
     double x, y;
     constexpr ImPlotPoint()                     : x(0.0), y(0.0) { }
@@ -321,7 +320,6 @@ struct ImPlotPoint {
     double& operator[] (size_t idx)             { igAssert(idx == 0 || idx == 1, "idx == 0 || idx == 1"); return ((double*)(void*)(char*)this)[idx]; }
     double  operator[] (size_t idx) const       { igAssert(idx == 0 || idx == 1, "idx == 0 || idx == 1"); return ((const double*)(const void*)(const char*)this)[idx]; }
 };
-__pragma(runtime_checks("",restore)) __pragma(check_stack()) __pragma(strict_gs_check(pop))
 struct ImPlotRange {
     double Min, Max;
     constexpr ImPlotRange()                         : Min(0.0), Max(0.0) { }

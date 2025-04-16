@@ -2635,6 +2635,214 @@
       "stname": "ImPlotPointError"
     }
   ],
+  "ImPlotPoint_ImPlotPoint": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImPlotPoint_ImPlotPoint",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "ImPlotPoint",
+      "location": "implot:472",
+      "ov_cimguiname": "ImPlotPoint_ImPlotPoint_Nil",
+      "signature": "()",
+      "stname": "ImPlotPoint"
+    },
+    {
+      "args": "(double _x,double _y)",
+      "argsT": [
+        {
+          "name": "_x",
+          "type": "double"
+        },
+        {
+          "name": "_y",
+          "type": "double"
+        }
+      ],
+      "argsoriginal": "(double _x,double _y)",
+      "call_args": "(_x,_y)",
+      "cimguiname": "ImPlotPoint_ImPlotPoint",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "ImPlotPoint",
+      "location": "implot:473",
+      "ov_cimguiname": "ImPlotPoint_ImPlotPoint_double",
+      "signature": "(double,double)",
+      "stname": "ImPlotPoint"
+    },
+    {
+      "args": "(const ImVec2 p)",
+      "argsT": [
+        {
+          "name": "p",
+          "type": "const ImVec2"
+        }
+      ],
+      "argsoriginal": "(const ImVec2& p)",
+      "call_args": "(p)",
+      "cimguiname": "ImPlotPoint_ImPlotPoint",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "ImPlotPoint",
+      "location": "implot:474",
+      "ov_cimguiname": "ImPlotPoint_ImPlotPoint_Vec2",
+      "signature": "(const ImVec2)",
+      "stname": "ImPlotPoint"
+    }
+  ],
+  "ImPlotPoint_destroy": [
+    {
+      "args": "(ImPlotPoint* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImPlotPoint*"
+        }
+      ],
+      "call_args": "(self)",
+      "cimguiname": "ImPlotPoint_destroy",
+      "defaults": {},
+      "destructor": true,
+      "location": "implot:472",
+      "ov_cimguiname": "ImPlotPoint_destroy",
+      "ret": "void",
+      "signature": "(ImPlotPoint*)",
+      "stname": "ImPlotPoint"
+    }
+  ],
+  "ImPlotRange_Clamp": [
+    {
+      "args": "(ImPlotRange* self,double value)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImPlotRange*"
+        },
+        {
+          "name": "value",
+          "type": "double"
+        }
+      ],
+      "argsoriginal": "(double value)",
+      "call_args": "(value)",
+      "cimguiname": "ImPlotRange_Clamp",
+      "defaults": {},
+      "funcname": "Clamp",
+      "location": "implot:491",
+      "ov_cimguiname": "ImPlotRange_Clamp",
+      "ret": "double",
+      "signature": "(double)const",
+      "stname": "ImPlotRange"
+    }
+  ],
+  "ImPlotRange_Contains": [
+    {
+      "args": "(ImPlotRange* self,double value)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImPlotRange*"
+        },
+        {
+          "name": "value",
+          "type": "double"
+        }
+      ],
+      "argsoriginal": "(double value)",
+      "call_args": "(value)",
+      "cimguiname": "ImPlotRange_Contains",
+      "defaults": {},
+      "funcname": "Contains",
+      "location": "implot:489",
+      "ov_cimguiname": "ImPlotRange_Contains",
+      "ret": "bool",
+      "signature": "(double)const",
+      "stname": "ImPlotRange"
+    }
+  ],
+  "ImPlotRange_ImPlotRange": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImPlotRange_ImPlotRange",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "ImPlotRange",
+      "location": "implot:487",
+      "ov_cimguiname": "ImPlotRange_ImPlotRange_Nil",
+      "signature": "()",
+      "stname": "ImPlotRange"
+    },
+    {
+      "args": "(double _min,double _max)",
+      "argsT": [
+        {
+          "name": "_min",
+          "type": "double"
+        },
+        {
+          "name": "_max",
+          "type": "double"
+        }
+      ],
+      "argsoriginal": "(double _min,double _max)",
+      "call_args": "(_min,_max)",
+      "cimguiname": "ImPlotRange_ImPlotRange",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "ImPlotRange",
+      "location": "implot:488",
+      "ov_cimguiname": "ImPlotRange_ImPlotRange_double",
+      "signature": "(double,double)",
+      "stname": "ImPlotRange"
+    }
+  ],
+  "ImPlotRange_Size": [
+    {
+      "args": "(ImPlotRange* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImPlotRange*"
+        }
+      ],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImPlotRange_Size",
+      "defaults": {},
+      "funcname": "Size",
+      "location": "implot:490",
+      "ov_cimguiname": "ImPlotRange_Size",
+      "ret": "double",
+      "signature": "()const",
+      "stname": "ImPlotRange"
+    }
+  ],
+  "ImPlotRange_destroy": [
+    {
+      "args": "(ImPlotRange* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImPlotRange*"
+        }
+      ],
+      "call_args": "(self)",
+      "cimguiname": "ImPlotRange_destroy",
+      "defaults": {},
+      "destructor": true,
+      "location": "implot:487",
+      "ov_cimguiname": "ImPlotRange_destroy",
+      "ret": "void",
+      "signature": "(ImPlotRange*)",
+      "stname": "ImPlotRange"
+    }
+  ],
   "ImPlotRect_Clamp": [
     {
       "args": "(ImPlotPoint *pOut,ImPlotRect* self,const ImPlotPoint p)",
